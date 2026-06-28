@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Booking | Royal Obsidian Rooms</title>
+    <meta name="description" content="Contact Royal Obsidian Rooms or book your stay directly through our website. Experience cinematic luxury.">
+    <meta name="keywords" content="contact hotel, book hotel, royal obsidian rooms booking, location">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">ROYAL OBSIDIAN ROOMS</a>
+        </div>
+        <nav id="main-nav">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header contact-header">
+            <h1 class="reveal">Contact & Reservations</h1>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="split-layout contact-layout">
+                    <div class="contact-info card reveal">
+                        <h2>Get in Touch</h2>
+                        <p>We look forward to welcoming you to your cinematic escape.</p>
+                        
+                        <div class="info-block">
+                            <h3 style="color: #e63946">Address</h3>
+                            <p>Avengers Tower<br>200 Park Avenue<br>Columbus Circle<br>Manhattan, NY 10166<br>United States<br>Earth-616</p>
+                        </div>
+                        
+                        <div class="info-block">
+                            <h3 style="color: #e63946">Phone</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                        
+                        <div class="info-block">
+                            <h3 style="color: #e63946">Email</h3>
+                            <p>reservations@royalobsidianrooms.com</p>
+                        </div>
+                    </div>
+
+                    <div class="booking-form-container card reveal">
+                        <h2>Book Your Stay</h2>
+                        <form id="booking-form" novalidate>
+                            <div class="form-group">
+                                <label for="guest-name">Full Name</label>
+                                <input type="text" id="guest-name" name="guest-name" placeholder="John Doe">
+                                <span class="error-message" id="name-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="guest-email">Email Address</label>
+                                <input type="email" id="guest-email" name="guest-email" placeholder="john@example.com">
+                                <span class="error-message" id="email-error"></span>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col">
+                                    <label for="check-in">Check-in Date</label>
+                                    <input type="date" id="check-in" name="check-in">
+                                    <span class="error-message" id="checkin-error"></span>
+                                </div>
+                                <div class="col">
+                                    <label for="check-out">Check-out Date</label>
+                                    <input type="date" id="check-out" name="check-out">
+                                    <span class="error-message" id="checkout-error"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="room-type">Room Type</label>
+                                <select id="room-type" name="room-type">
+                                    <option value="">-- Select a Room --</option>
+                                    <option value="noir">The Noir Standard</option>
+                                    <option value="crimson">The Crimson Suite</option>
+                                    <option value="penthouse">The Director's Penthouse</option>
+                                </select>
+                                <span class="error-message" id="room-error"></span>
+                            </div>
+
+                            <button type="submit" class="btn primary-btn submit-btn">Confirm Booking</button>
+                            <div id="form-success-message" class="success-message hidden">
+                                Thank you! Your reservation request has been submitted successfully.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Royal Obsidian Rooms. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
